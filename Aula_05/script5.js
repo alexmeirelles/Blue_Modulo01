@@ -30,36 +30,16 @@ Idade: entre 0 e 150;
 Salário: maior que zero;
 Estado Civil: 's', 'c', 'v', 'd';
 
-Faça um programa que peça um número par, e repita a execução caso o número digitado seja ímpar.
-var a = +prompt("Digite um numero par ");
-
-while(a%2!=0){
-    var a = +prompt("Falei numero par imbecil ");
-}
-
-console.log("Parabens genio")
-
-
-Jogo da adivinhação - Escreva um programa que faça o computador “pensar” em um número inteiro 
-entre 0 e 10 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador. 
-O programa deve ser repetir até o usuário acertar o número, e a cada palpite deve dizer se o 
-número é maior ou menor que o palpite. No final dele deve escrever na tela que o usuário 
-encontrou o número, e mostrar a quantidade de palpites que foi necessária.
-
-const pc = Math.floor(Math.random() * 10)
-
-*/
-
 var nome = prompt("Digite o nome ");
-while (nome.lenght < 4){
-    var a = prompt("Digite um nome maior ");
+while (nome.length <= 3){
+    var nome = prompt("Digite um nome maior ");
 }
 
 console.log("ok")
 
 var idade = +prompt("Digite a idade ");
 while (idade < 0 || idade > 150){
-    var a = +prompt("Idade de pessoa viva ");
+    var idade = +prompt("Idade de pessoa viva ");
 }
 
 console.log("ok")
@@ -72,8 +52,34 @@ while (sal < 0){
 console.log("ok")
 
 var civil = ""
-while (civil != "s"  || civil != "c" || civil != "v" || civil != "d" && civil != ""){
-    var civil = prompt("Digite o estado civil 's', 'c', 'v', 'd' ");
+while (civil != "s"  && civil != "c" && civil != "v" && civil != "d"){
+    var civil = prompt("Digite o estado civil correto 's', 'c', 'v', 'd': ");
 }
 
 console.log("Cadastro finalizado")
+
+Faça um programa que peça um número par, e repita a execução caso o número digitado seja ímpar.
+var a = +prompt("Digite um numero par ");
+
+while(a%2!=0){
+    var a = +prompt("Falei numero par imbecil ");
+}
+
+console.log("Parabens genio")
+
+Jogo da adivinhação - Escreva um programa que faça o computador “pensar” em um número inteiro 
+entre 0 e 10 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador. 
+O programa deve ser repetir até o usuário acertar o número, e a cada palpite deve dizer se o 
+número é maior ou menor que o palpite. No final dele deve escrever na tela que o usuário 
+encontrou o número, e mostrar a quantidade de palpites que foi necessária.
+
+const ran = Math.floor(Math.random() * 10)
+
+do var num = +prompt("Digite o que voce acha que é: ");
+
+while(num != ran){
+    var num = +prompt("Digite o que voce acha que é: ");
+}
+console.log("Acertou bonitinho")
+
+*/
