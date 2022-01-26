@@ -1,6 +1,5 @@
 var prompt = require('prompt-sync')();
 
-
 /*
 
 Faça um programa que peça um número inteiro e crie arrays com:
@@ -16,5 +15,25 @@ Faça um programa que sorteie 20 números de 0 a 100, armazene todos em um array
 
 Faça um programa que peça o nome de usuário e a senha de um usuário. A senha deve ter no mínimo 8 caracteres, pelo menos um número e um caracter especial.
 
-/*
+*/
 
+var a = 0;
+var par = [];
+var impar = [];
+var count = 0;
+
+var a = +prompt("Digite um número para criar as listas par e impar");
+
+while (count < a){
+    if (a%2 == 0){
+      par[count] = a-count;  
+    } else {
+       impar[count] = a-count;
+  
+    }
+    
+    count++
+}
+
+console.log(par);
+console.log(impar);
