@@ -1,5 +1,5 @@
 var prompt = require('prompt-sync')();
-/*Pessa para o usuario digitar o nome de 5 times de futebol, der a pontuação aleatoria para cada time
+/*Peça para o usuario digitar o nome de 5 times de futebol, der a pontuação aleatoria para cada time
 e mostre o vencedor;
 */
 
